@@ -59,3 +59,9 @@ typings/
 
 # next.js build output
 .next
+
+example_tmp
+example_podspec
+tmp
+appium.out
+log
