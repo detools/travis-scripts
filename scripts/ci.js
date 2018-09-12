@@ -1,15 +1,16 @@
-import checkRequiredVariables from './utils/checkRequiredVariables'
 import cleanup from './cleanup'
+import removeTestsFolders from './removeTestsFolders'
+import checkRequiredVariables from './checkRequiredVariables'
 import checkReactNativeCLI from './checkReactNativeCLI'
 import createNewTarball from './createNewTarball'
 import createNewProject from './createNewProject'
 import copyNecessaryFiles from './copyNecessaryFiles'
 import runBeforeCreateProjects from './runBeforeCreateProjects'
-import removeTestsFolders from './removeTestsFolders'
 import generateTestsFolders from './generateTestsFolders'
+import runAfterInstall from './runAfterInstall'
+import installPods from './installPods'
 import runAppium from './runAppium'
 import buildAndroid from './buildAndroid'
-import installPods from './installPods'
 import buildIOS from './buildIOS'
 import runTests from './runTests'
 
@@ -25,6 +26,7 @@ import runTests from './runTests'
   copyNecessaryFiles()
   runBeforeCreateProjects()
   generateTestsFolders()
+  runAfterInstall()
   installPods()
 
   runAppium()

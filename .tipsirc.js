@@ -35,14 +35,14 @@ export default {
   // Default value — { ios: [], android: [], podspec: [] }
   additionalVariablesToTest: {},
 
-  // Default value — { ios: '', android: '', podspec: '' }
+  // Default value — { ios: 'npm run test:ios', android: 'npm run test:android' }
   test: {
     ios: 'npm run test:ios',
     android: 'npm run test:android',
   },
 
   // Default value — 1
-  runTestsCount: 30,
+  runTestsCount: 5,
 
   // Default value — true
   failFast: false,

@@ -36,13 +36,14 @@ script:
 
   # Checkout the latest stable tag.
   # Note that you can just hardcode a preferred version here.
+  - (cd ~/.nvm; git checkout `git describe --abbrev=0 --tags`)
 
-  - (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`)
-
-  # Install the desired version of Node
+  # Add nvm command available to shell
   - source ~/.nvm/nvm.sh
 
+  # Installi a lts version of Node
   - nvm install --lts
 
+  # Run build script
   - npm run ci
 

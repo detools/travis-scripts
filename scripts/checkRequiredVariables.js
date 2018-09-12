@@ -1,6 +1,6 @@
 import isEmpty from 'lodash/isEmpty'
-import config from './config'
-import log from './log'
+import config from './utils/config'
+import log from './utils/log'
 
 export default function checkRequiredVariables() {
   log('CHECK "requiredVariables"')
