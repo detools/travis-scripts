@@ -47,7 +47,7 @@ matrix:
   include:
     - os: osx
       language: objective-c
-      osx_image: xcode9.1
+      osx_image: xcode9.4
       env:
         - OS: 'ios'
 
@@ -59,9 +59,9 @@ matrix:
         components:
           - platform-tools
           - tools
-          - build-tools-26.0.2
+          - build-tools-27.0.3
           - android-21
-          - android-26
+          - android-27
           - sys-img-armeabi-v7a-android-21
           - extra-android-m2repository
           - extra-google-m2repository
@@ -94,10 +94,6 @@ script:
 ```
 
 **.travis.yml** — is a config for Travis CI. It contains a matrix with jobs for iOS and Android.  
-* [Travis does not support x86 Android emulators.](https://github.com/facebook/react-native/issues/21037)
-* That's why we can't use the latest version of RN.
-* Currently the maximum possible version of RN is 0.48.4.
-* This version requires Xcode 9.1.
 * `sys-img-armeabi-v7a-android-21` is an Emulator image with Android SDK 21 on board.
 * This is an ARM image because we can't use x86 Emulators.
 * Another parts of Android components just contains required parts to build an Android App.
@@ -239,7 +235,6 @@ export default {
 * Add bin scripts
 * Create a npx command to bootstrap new modules with example apps and tests from CLI
 * Add podspec generator
-* Track [21037](https://github.com/facebook/react-native/issues/21037) issue on RN and upgrade example to the latest RN if it will possible
 * Use passed fields to config `additionalVariablesToBuild`, `build`, `additionalVariablesToTest`
 
 ## License

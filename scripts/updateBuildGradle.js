@@ -45,21 +45,12 @@ export default function updateBuildGradle() {
   const spaces = count => range(count).map(() => ' ').join('')
 
   const signinConfigMarker = 'buildTypes {'
-  const buildToolsVersion = 'buildToolsVersion "23.0.1"'
-  const compileSdkVersion = 'compileSdkVersion 23'
-  const targetSdkVersion = 'targetSdkVersion 22'
-  const compile = '    compile '
   const content = readFileSync(buildGradle, { encoding: 'utf-8' })
   const signinConfig = generateConfig(originialConfig, 4, true)
-
 
   const nextConfig = content
     .replace(signinConfigMarker, `${signinConfig}\n${spaces(4)}${signinConfigMarker}`)
     .replace(proguardFilesLine, `${proguardFilesLine}\n${spaces(12)}${linkToSigninConfig}`)
-    .replace(buildToolsVersion, buildToolsVersion.replace('23.0.1', '26.0.2'))
-    .replace(compileSdkVersion, compileSdkVersion.replace('23', '26'))
-    .replace(targetSdkVersion, targetSdkVersion.replace('22', '26'))
-    .replace(compile, compile.replace('compile', 'implementation'))
 
   writeFileSync(buildGradle, nextConfig)
 }

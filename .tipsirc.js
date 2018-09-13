@@ -42,7 +42,7 @@ export default {
   },
 
   // Default value — 1
-  runTestsCount: 5,
+  runTestsCount: 30,
 
   // Default value — true
   failFast: false,
