@@ -26,6 +26,7 @@ const defaultValues = {
   // @see copyNecessaryFiles
   filesToCopy: [
     '.appiumhelperrc',
+    '.babelrc',
     'package.json',
     'android/build.gradle',
     'android/gradle/wrapper/gradle-wrapper.properties',
