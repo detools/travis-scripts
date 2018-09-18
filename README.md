@@ -1,4 +1,4 @@
-# tipsi-travis-scripts
+# @detools/travis-scripts
 
 <!-- MarkdownTOC depth="2" autolink="true" bracket="round" style="ordered" -->
 
@@ -29,9 +29,9 @@ This project helps us to follow DRY principle.
 
 ## How to use
 1. First of all, you need to create your 3rd-party module.
-2. After that, install `tipsi-travis-scripts` as devDependency:
+2. After that, install `@detools/travis-scripts` as devDependency:
   ```sh
-  npm i tipsi-travis-scripts -D
+  npm i @detools/travis-scripts -D
   ```
 3. This module will create two files:
   ```
@@ -113,7 +113,7 @@ export default {
 }
 ```
 
-**.tipsirc.js** — is a config for `tipsi-travis-scripts`.  
+**.tipsirc.js** — is a config for `@detools/travis-scripts`.  
 It contains optional and required fields that needs to be managed by project maintainer.  
 Let see them all:
 ```js
