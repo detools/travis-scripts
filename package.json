@@ -1,5 +1,5 @@
 {
-  "name": "tipsi-travis-scripts",
+  "name": "@detools/travis-scripts",
   "version": "1.1.0",
   "description": "Scripts to run builds and tests for 3rd-party modules on Travis CI",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tipsi/tipsi-travis-scripts.git"
+    "url": "git+https://github.com/detools/travis-scripts.git"
   },
   "keywords": [
     "travis"
@@ -18,9 +18,9 @@
   "author": "Anton Kuznetsov <isnifer@gmail.com> (https://github.com/isnifer)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tipsi/tipsi-travis-scripts/issues"
+    "url": "https://github.com/detools/travis-scripts/issues"
   },
-  "homepage": "https://github.com/tipsi/tipsi-travis-scripts#readme",
+  "homepage": "https://github.com/detools/travis-scripts#readme",
   "dependencies": {
     "chalk": "2.4.1",
     "command-exists": "1.2.7",
