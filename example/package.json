@@ -13,7 +13,7 @@
   "dependencies": {
     "react": "16.5.0",
     "react-native": "0.57.0",
-    "tipsi-travis-scripts": "file:../detools-travis-scripts-latest.tgz"
+    "@detools/travis-scripts": "file:../detools-travis-scripts-latest.tgz"
   },
   "devDependencies": {
     "appium": "1.8.1",
