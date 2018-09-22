@@ -16,7 +16,7 @@
     "@detools/travis-scripts": "file:../detools-travis-scripts-latest.tgz"
   },
   "devDependencies": {
-    "appium": "1.8.1",
+    "appium": "1.9.1",
     "babel-jest": "23.6.0",
     "metro-react-native-babel-preset": "0.45.2",
     "jest": "23.6.0",
