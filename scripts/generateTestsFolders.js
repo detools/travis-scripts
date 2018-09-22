@@ -39,8 +39,8 @@ export default function generateTestsFolders() {
 
   if (IS_MACOS && IS_IOS) {
     log('GENERATE .xcodeproj VIA XCODEGEN')
-    if (!commandExists('xcodegen')) {
-      if (!commandExists('brew')) {
+    if (!commandExists.sync('xcodegen')) {
+      if (!commandExists.sync('brew')) {
         // eslint-disable-next-line
         runInTestFolder('/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"')
       }
