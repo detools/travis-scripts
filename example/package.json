@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "preinstall": "node scripts/pre-install.js",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "cold-start": "npm start -- --reset-cache",
     "test": "jest",
@@ -12,7 +13,7 @@
   "dependencies": {
     "react": "16.5.0",
     "react-native": "0.57.0",
-    "tipsi-travis-scripts": "file:../tipsi-travis-scripts-latest.tgz"
+    "tipsi-travis-scripts": "file:../detools-travis-scripts-latest.tgz"
   },
   "devDependencies": {
     "appium": "1.8.1",

@@ -1,0 +1,9 @@
+name: example
+options:
+  bundleIdPrefix: com.example
+targets:
+  example:
+    type: application
+    platform: iOS
+    deploymentTarget: "10.0"
+    sources: [example]
