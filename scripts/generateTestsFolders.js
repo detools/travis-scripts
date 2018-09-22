@@ -45,6 +45,7 @@ export default function generateTestsFolders() {
         runInTestFolder('/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"')
       }
 
+      runInTestFolder('brew update')
       runInTestFolder('brew install xcodegen')
     }
 
