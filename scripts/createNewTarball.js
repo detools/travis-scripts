@@ -13,6 +13,8 @@ export default function createNewTarball() {
     throw new Error('You should create a .npmrc file to ignore unnecessary directories')
   }
 
+  const name = moduleName.replace('@', '').replace('/', '-')
+
   run('npm pack')
-  sh.mv(`${moduleName}-${moduleVersion}.tgz`, `${moduleName}-latest.tgz`)
+  sh.mv(`${name}-${moduleVersion}.tgz`, `${name}-latest.tgz`)
 }
