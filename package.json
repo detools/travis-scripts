@@ -1,6 +1,6 @@
 {
   "name": "@detools/travis-scripts",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Scripts to run builds and tests for 3rd-party modules on Travis CI",
   "main": "index.js",
   "scripts": {
