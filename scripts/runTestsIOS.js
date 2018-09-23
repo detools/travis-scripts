@@ -14,7 +14,7 @@ export default function runTestsIOS(count) {
   if (IS_MACOS && IS_IOS) {
     const command = config.get('test.ios')
     if (isEmpty(command)) {
-      throw new Error('Need to set a npm script to run tests for ios in .tipsirc.js')
+      throw new Error('Need to set a npm script to run tests for ios in .detoolsrc.js')
     }
 
     log(`${count}. RUN IOS DEFAULT TESTS`)

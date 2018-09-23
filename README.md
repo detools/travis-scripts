@@ -9,7 +9,7 @@
 1. [Why](#why)
 1. [How to use](#how-to-use)
     * [.travis.yml](#travisyml)
-    * [.tipsirc.js](#tipsircjs)
+    * [.detoolsrc.js](#detoolsrcjs)
 1. [Where it has been used](#where-it-has-been-used)
 1. [Roadmap](#roadmap)
 1. [License](#license)
@@ -39,7 +39,7 @@ This project helps us to follow DRY principle.
 3. This module will create two files:
   ```
   .travis.yml
-  .tipsirc.js
+  .detoolsrc.js
   ```
 
 **Let's take a closer look:**
@@ -105,7 +105,7 @@ script:
 * `OS=both` is a default behaviour.
 * Script does install and run a `ci` — the only command to build and test example apps
 
-### .tipsirc.js
+### .detoolsrc.js
 ```js
 export default {
   // Default value — { ios: '', android: '', podspec: '' }
@@ -116,7 +116,7 @@ export default {
 }
 ```
 
-**.tipsirc.js** — is a config for `@detools/travis-scripts`.  
+**.detoolsrc.js** — is a config for `@detools/travis-scripts`.  
 It contains optional and required fields that needs to be managed by project maintainer.  
 Let see them all:
 ```js
@@ -217,7 +217,7 @@ export default {
   // @see runAndroidEmulator
   virtualDevice: {
     ios: 'iPhone 6', // Optional
-    android: 'tipsi-android-5.1.1-22', // !!!REQUIRED!!!
+    android: 'detools-android-5.1.1-22', // !!!REQUIRED!!!
   }, // Default value. !!!REQUIRED!!!
 
   // @description Indicator to create sdcard for Android Emulator and put it path to emulator config
@@ -229,12 +229,9 @@ export default {
 
 ## Where it has been used
 * [tipsi-camera-roll](https://github.com/tipsi/tipsi-camera-roll)
+* [tipsi-router](https://github.com/tipsi/tipsi-router)
 
 ## Roadmap
-* Integrate to:
-    * [tipsi-stripe](https://github.com/tipsi/tipsi-stripe)
-    * [tipsi-router](https://github.com/tipsi/tipsi-router)
-    * [tipsi-twitter](https://github.com/tipsi/tipsi-twitter)
 * Add bin scripts
 * Create a npx command to bootstrap new modules with example apps and tests from CLI
 * Add podspec generator

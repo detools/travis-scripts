@@ -12,5 +12,5 @@ execSync('npm pack', { cwd: rootDirectory })
 
 const name = packageJSON.name.replace('@', '').replace('/', '-')
 
-// 3. Rename .tgz to tipsi-router-latest.tgz
+// 3. Rename .tgz to detools-travis-scripts-latest.tgz
 execSync(`mv ${name}-${packageJSON.version}.tgz ${name}-latest.tgz`, { cwd: rootDirectory })

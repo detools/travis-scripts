@@ -3,8 +3,8 @@ import path from 'path'
 
 // Point to project root
 const getFilepath = filename => path.resolve(process.cwd(), '..', '..', filename)
-const tipsi = {
-  path: getFilepath('.tipsirc.js'),
+const detools = {
+  path: getFilepath('.detoolsrc.js'),
   content: [
     'export default {',
     "  // Default value — { ios: '', android: '' }",
@@ -20,7 +20,7 @@ const travis = {
   content: fs.readFileSync(path.resolve(process.cwd(), '.travis.yml')),
 }
 
-const files = [tipsi, travis]
+const files = [detools, travis]
 
 files.forEach((file) => {
   if (!fs.existsSync(file.path)) {

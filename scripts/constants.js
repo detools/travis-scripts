@@ -17,7 +17,7 @@ export const TMP = 'tmp'
 export const REACT_NATIVE_PACKAGE_NAME = 'react-native'
 export const REACT_NATIVE_CLI_PACKAGE_NAME = 'react-native-cli'
 export const BREAKING_REACT_NATIVE_VERSION = 49
-export const TIPSI_CONFIG_NAME = '.tipsirc.js'
+export const DETOOLS_CONFIG_NAME = '.detoolsrc.js'
 export const NPMIGNORE_FILENAME = '.npmignore'
 export const CWD = process.cwd()
 

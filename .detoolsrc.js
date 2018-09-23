@@ -8,10 +8,6 @@ export default {
     // Or it can be a Function
     // 'npm run before-install-create-projects',
     // () => 1 + 2,
-
-    // tipsi-stripe commands here:
-    // npm run set-stripe-url-type
-    // npm run configure
   ],
 
   // Default value — Array<String>. See in "scripts/utils/config.js"
@@ -47,7 +43,7 @@ export default {
   // Default value — true
   failFast: false,
 
-  // Default value — { ios: 'iPhone 6', android: 'tipsi-android-5.1.1-22' }
+  // Default value — { ios: 'iPhone 6', android: 'detools-android-5.1.1-22' }
   virtualDevice: {
     ios: 'iPhone 6',
     android: 'zzz_nexus_6p_api_21',

@@ -2,5 +2,5 @@ tmp
 example
 example_tmp
 example_podspec
-.tipsirc.js
+.detoolsrc.js
 *.log

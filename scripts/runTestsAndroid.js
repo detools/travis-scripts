@@ -8,7 +8,7 @@ export default function runTestsAndroid(count) {
   if (IS_ANDROID) {
     const command = config.get('test.android')
     if (isEmpty(command)) {
-      throw new Error('Need to set a npm script to run tests for android in .tipsirc.js')
+      throw new Error('Need to set a npm script to run tests for android in .detoolsrc.js')
     }
 
     log('', 'empty') // only for beautiful stdout

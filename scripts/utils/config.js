@@ -1,11 +1,11 @@
 import { existsSync } from 'fs'
 import get from 'lodash/get'
-import { CWD, TIPSI_CONFIG_NAME, PROJECT } from '../constants'
+import { CWD, DETOOLS_CONFIG_NAME, PROJECT } from '../constants'
 
-const tipsiRCPath = `${CWD}/${TIPSI_CONFIG_NAME}`
+const detoolsRCPath = `${CWD}/${DETOOLS_CONFIG_NAME}`
 
 // eslint-disable-next-line import/no-dynamic-require
-const tipsiRC = existsSync(tipsiRCPath) ? require(tipsiRCPath).default : {}
+const detoolsRC = existsSync(detoolsRCPath) ? require(detoolsRCPath).default : {}
 
 const defaultValues = {
   // @description Just checked passed variables in process.env
@@ -96,7 +96,7 @@ const defaultValues = {
   // @see runAndroidEmulator
   virtualDevice: {
     ios: 'iPhone 6', // Optional
-    android: 'tipsi-android-5.1.1-22', // Required
+    android: 'detools-android-5.1.1-22', // Required
   }, // Required
 
   // @description Indicator to create sdcard for Android Emulator and put it path to emulator config
@@ -105,5 +105,5 @@ const defaultValues = {
 }
 
 export default {
-  get: path => get(tipsiRC, path, get(defaultValues, path)),
+  get: path => get(detoolsRC, path, get(defaultValues, path)),
 }
