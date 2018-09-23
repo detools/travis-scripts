@@ -1,6 +1,6 @@
 # @detools/travis-scripts
 
-[![npm version](https://badge.fury.io/js/%40detools%2Ftravis-scripts.svg)](https://badge.fury.io/js/%40detools%2Ftravis-scripts)
+[![npm version](https://badge.fury.io/js/%40detools%2Ftravis-scripts.svg)](https://www.npmjs.com/package/@detools/travis-scripts)
 [![Build Status](https://travis-ci.org/detools/travis-scripts.svg?branch=master)](https://travis-ci.org/detools/travis-scripts)
 
 <!-- MarkdownTOC depth="2" autolink="true" bracket="round" style="ordered" -->
