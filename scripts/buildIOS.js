@@ -27,6 +27,7 @@ function buildIOSProject(projectPath) {
     '-sdk iphonesimulator',
     "-destination 'platform=iOS Simulator,name=iPhone 6'",
     '-derivedDataPath build',
+    '-UseModernBuildSystem=NO',
     'ONLY_ACTIVE_ARCH=NO',
     "OTHER_LDFLAGS='$(inherited) -ObjC -lc++'",
   ].join(' ')
