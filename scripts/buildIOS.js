@@ -27,6 +27,7 @@ function buildIOSProject(projectPath) {
     '-sdk iphonesimulator',
     "-destination 'platform=iOS Simulator,name=iPhone 6'",
     '-derivedDataPath build',
+    // Remove this flag when https://github.com/facebook/react-native/issues/19573 will be fixed
     '-UseModernBuildSystem=NO',
     'ONLY_ACTIVE_ARCH=NO',
     "OTHER_LDFLAGS='$(inherited) -ObjC -lc++'",

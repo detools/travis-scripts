@@ -237,6 +237,11 @@ export default {
 * Add podspec generator
 * Use passed fields to config `additionalVariablesToBuild`, `build`, `additionalVariablesToTest`
 
+## Xcode 10
+There is an error with RN 0.57 on Xcode 10 — https://github.com/facebook/react-native/issues/19573.
+I have added `-UseModernBuildSystem=NO` flag to be ready for Xcode 10 for now.
+When RN Team will fix build on Xcode 10 — I will remove it.
+
 ## License
 
 MIT License
