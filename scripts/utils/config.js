@@ -33,7 +33,6 @@ const defaultValues = {
     'android/app/src/main/AndroidManifest.xml',
     `ios/${PROJECT}/AppDelegate.m`,
     `ios/${PROJECT}/Info.plist`,
-    `ios/${PROJECT}.yml`,
     'src',
     'scripts',
     '__tests__',

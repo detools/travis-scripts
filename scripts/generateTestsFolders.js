@@ -1,5 +1,4 @@
 import path from 'path'
-import commandExists from 'command-exists'
 import {
   PODSPEC_TESTS_FOLDER,
   TMP_FOLDER,
@@ -36,19 +35,4 @@ export default function generateTestsFolders() {
   log('LINK PROJECT')
   runInTestFolder(`react-native unlink ${moduleName}`)
   runInTestFolder('react-native link')
-
-  if (IS_MACOS && IS_IOS) {
-    log('GENERATE .xcodeproj VIA XCODEGEN')
-    if (!commandExists.sync('xcodegen')) {
-      if (!commandExists.sync('brew')) {
-        // eslint-disable-next-line
-        runInTestFolder('/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"')
-      }
-
-      runInTestFolder('brew update')
-      runInTestFolder('brew install xcodegen')
-    }
-
-    runInBothProjects('xcodegen --spec ios/example.yml')
-  }
 }
