@@ -3,3 +3,4 @@ example
 example_tmp
 example_podspec
 .tipsirc.js
+*.log
