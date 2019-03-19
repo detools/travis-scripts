@@ -6,7 +6,8 @@
   "scripts": {
     "postinstall": "node -r esm scripts/postinstall.js",
     "ci": "node scripts/installNodeModules.js; node -r esm scripts/ci.js",
-    "lint": "eslint '.travis/*' 'scripts/**/*'"
+    "lint": "eslint '.travis/*' 'scripts/**/*'",
+    "pub": "npm publish ./ --access public"
   },
   "repository": {
     "type": "git",
