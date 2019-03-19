@@ -1,6 +1,6 @@
 {
   "name": "@detools/travis-scripts",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Scripts to run builds and tests for 3rd-party modules on Travis CI",
   "main": "index.js",
   "scripts": {
@@ -22,18 +22,18 @@
   },
   "homepage": "https://github.com/detools/travis-scripts#readme",
   "dependencies": {
-    "chalk": "2.4.1",
-    "command-exists": "1.2.7",
-    "esm": "3.0.82",
-    "fs-extra": "7.0.0",
-    "lodash": "4.17.10",
-    "luxon": "1.3.3"
+    "chalk": "^2.4.2",
+    "command-exists": "^1.2.8",
+    "esm": "^3.2.18",
+    "fs-extra": "^7.0.1",
+    "lodash": "^4.17.11",
+    "luxon": "^1.11.4"
   },
   "devDependencies": {
-    "eslint": "5.5.0",
-    "eslint-config-tipsi": "2.2.0"
+    "@detools/eslint-config": "^1.2.0",
+    "eslint": "^5.15.3"
   },
   "eslintConfig": {
-    "extends": "tipsi"
+    "extends": "@detools/eslint-config"
   }
 }
